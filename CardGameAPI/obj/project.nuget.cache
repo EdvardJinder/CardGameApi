@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "WTr1bJtu22gG9XPkHaMS1poG6Ylpheya8G1bw3S2ty/ueRSARWIAI3+o8X14j5cFPE61baSJ1v2ZeHKCMfwEIA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\edvar\\OneDrive\\Dokument\\GitHub\\CardGameApi\\CardGameAPI\\CardGameAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\edvar\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\edvar\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\edvar\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\edvar\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\edvar\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\edvar\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
