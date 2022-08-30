@@ -1,7 +1,14 @@
-
+﻿
 using CardGameAPI.Models;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using CardGameAPI.Data;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddDbContext<CardGameAPIContext>(options =>
+
+    options.UseSqlServer(builder.Configuration.GetConnectionString("CardGameAPIContext") ?? throw new InvalidOperationException("Connection string 'CardGameAPIContext' not found.")));
 
 // Add services to the container.
 
