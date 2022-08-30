@@ -19,7 +19,11 @@ namespace CardGameAPI.Models
                 IsRunning = true;
                 StartTime = DateTime.Now;
                 Deck = new();
-                Deck.Shuffle();
+                for(int i = 0; i < 3; i++)
+                {
+                    Deck.Shuffle();
+                }
+
                 score = 0;
                 return true;
             }

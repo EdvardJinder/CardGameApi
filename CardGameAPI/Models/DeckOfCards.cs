@@ -18,21 +18,27 @@ namespace CardGameAPI.Models
         }
 
         #region Shuffle and Sorting
+
         public void Shuffle()
         {
-            if (cards.Count <= 0) return;
+            var rand = new Random();
+           
 
-            var rnd = new Random();
-            int nrOfShuffles = rnd.Next(100, 100000);
-            for (int shuffle = 0; shuffle < nrOfShuffles; shuffle++)
+            for (int i = cards.Count - 1; i > 0; i--)
             {
-                //Swap to random cards with each other
-                int loCard = rnd.Next(0, cards.Count);
-                int hiCard = rnd.Next(0, cards.Count);
-
-                (cards[loCard], cards[hiCard]) = (cards[hiCard], cards[loCard]);
+                int n = rand.Next(i + 1);
+                SwapPlayingCards(cards[i], cards[n]);
             }
+
         }
+
+        private void SwapPlayingCards(PlayingCard card1, PlayingCard card2)
+        {
+            int pos1 = cards.IndexOf(card1);
+            cards[cards.IndexOf(card2)] = card1;
+            cards[pos1] = card2;
+        }
+
         public void Sort() => cards.Sort();
 
         
